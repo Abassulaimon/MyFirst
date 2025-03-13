@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal</title>
+    <link rel="stylesheet" href="my..css">
+    <link rel="shortcut icon" href="Images/Favi.ico.jpg" type="Images/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script defer src="my.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="/Images/Real.png" alt="Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a id="Log" href=""><b>Place Order</b></a>
+                <a id="Reg" href=""><b>Reservation</b></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="Hero">
+                <h1>EXPERIENCE THE FLAVORS OF OPULENT BITES</h1>
+                <p>Savor the taste of excellence with our delicious food menu, crafted to delight your every craving.</p>
+                <button id="Menu" href="#">Explore Our Menu!</button>
+                <p>Where Every Bite Tells A Story!!!</p>
+            </div>
+        </section>
+        <section>
+            <div id="About">
+                <h1>ABOUT US</h1>
+            </div>
+        </section>
+        <section class="Step">
+            <div class="Intro">
+                <div id="Story">
+                    <h1>Our Story</h1>
+                    <p>At Opulent Bite, we go beyond just serving a meal—we create an unforgettable dining experience that makes you feel like family. Our chefs carefully select the freshest ingredients to prepare dishes that are as visually stunning as they are delicious.</p>
+                </div>
+                <div id="Video">
+                    <video controls src="/Video/Real Op.mp4"></video>
+                </div>
+            </div>
+            <div class="M2">
+                <div id="Video">
+                    <video controls src="/Video/Real Op.mp4"></video>
+                </div>
+                <div id="Story">
+                    <h1>Our Mission</h1>
+                    <p>Our goal is to deliver outstanding cuisine, exceptional service, and a warm, inviting atmosphere that makes every guest feel right at home.</p>
+                </div>
+            </div>
+        </section>
+        <section class="dd">
+            <div>
+                <h1>OUR MENU</h1>
+            </div>
+            <div>
+                <ul>
+                    <button><li>Pizza - $10</li></button>
+                    <button><li>Burger - $8</li></button>
+                    <button><li>Pasta - $12</li></button>
+                    <button><li>Salad - $6</li></button>
+                    <button><li>Rice with chicken - $20</li></button>
+                </ul>
+            </div>
+            <form class="order-form">
+                <h3>Place Your Order</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Order Details" required></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+        <section class="reservation-form">
+            <h1>Make a Reservation</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Reservation Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" placeholder="Number of guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" placeholder="Any special requests?"></textarea>
+                </div>
+                <button id="res-btn" type="submit">Submit Reservation</button>
+            </form>
+        </section>
+        <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Opulent Bite. All rights reserved.</p>
+    </footer>
+    </main>
+</body>
+</html>
